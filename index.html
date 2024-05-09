@@ -92,6 +92,7 @@ select>.op:hover{
     <option disabled selected>Projects</option>
     <option  value="calculator">calculator</option>
     <option  value="calculator1">Age-Calculator</option>
+    <option  value="stopwatch">Stop Watch</option>
 </select>
 <button onclick="fn()">Open</button>
 </div>
@@ -109,6 +110,9 @@ select>.op:hover{
     else if(inp === "calculator1")
     {
         window.open("age.html")
+    }
+    else if(inp == "stopwatch"){
+        window.open("stop.html")
     }
     else{
         document.write("Invaluid")
