@@ -111,13 +111,14 @@
 </div>
     
         <div class="q">
-    <button onclick="start()" class="col-11 mt-3"> <i class="fas fa-play"></i></button>
+    <button onclick="start()" id="btn1"  class="col-11 mt-3"> <i class="fas fa-play"></i></button>
     <button onclick="stop()"><i class="fa fa-pause-circle" aria-hidden="true"></i></button>
     <button onclick="reset()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
 </div>
 </div>
 </div>
     <script>
+        
      var sec=0;
      var min=0;
      var hour=0;
@@ -142,17 +143,26 @@ hour++;
         
      }
      function start(){
-     timer=setInterval(up ,1000)
-                  var n=document.getElementById("btn1").disabled = true;
+         timer=setInterval(up ,1.0)
+     
+         var n=document.getElementById("btn1").disabled = true;
     }
+
     function stop(){
         clearInterval(timer)
     }
     function reset(){
-        document.getElementById("sec").innerHTML=0
-        document.getElementById("min").innerHTML=0
-                document.getElementById("hour").innerHTML=0
+    
+sec=document.getElementById("sec").innerHTML=0
+     min=document.getElementById("min").innerHTML=0
+   hour=document.getElementById("hour").innerHTML=0
+     console.log(sec)
+     if(sec == 0 && min == 0 && hour == 0 ){
+     var b;
+     }
+
     }
+    // alert("Refersh A Page After")
     </script>
 </body>
 </html>
