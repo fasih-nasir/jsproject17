@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+display: flex;
+flex-direction: column;
+align-items: center;
+/* background: linear-gradient( #080912 , #121427); */
+            /* background-color:  rgb(10, 64, 72);; */
+        }
+        #inp{
+            font-size: 24px !important;
+        }
+        input{
+            text-align: center;
+            /* color:rgb(118, 98, 176); */
+            margin: 20px 0px;
+            padding: 10px 10px;
+            border: none;
+            box-shadow: rgb(208, 210, 211) 1px 1px 5px 4px inset;
+            border-radius: 50px;
+            /* background-color: #4D4E5B  */
+        }
+        div{
+            padding: 20px;
+            /* background-color: black; */
+            /* border: 2px solid red; */
+            width: 400px;
+          padding-left: 40px;
+        }
+        button{
+            /* border: 1px solid black; */
+            background-color:white;
+            color: black;
+border-radius: 30px;
+            border: none;;
+            padding: 20px;
+            margin: 5px;
+            width: 60px;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        }
+        button:hover{box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            color: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            border: none;
+/* background-color: #df691f; */
+        }
+    </style>
+</head>
+<body>
+    <input readonly id="inp">
+    <div>    <button onclick="fn('A')">A</button>
+    <button onclick="fn('B')">B</button>
+    <button onclick="fn('C')">C</button>
+    <button onclick="fn('D')">D</button> 
+    <button onclick="fn('E')">E</button>
+    <button onclick="fn('F')">F</button>
+    <button onclick="fn('G')">G</button>
+    <button onclick="fn('H')">H</button>
+    <button onclick="fn('I')">I</button>
+    <button onclick="fn('J')">J</button>
+    <button onclick="fn('K')">K</button>
+    <button onclick="fn('L')">L</button>
+    <button onclick="fn('M')">M</button>
+    <button onclick="fn('N')">N</button>
+    <button onclick="fn('O')">O</button>
+    <button onclick="fn('P')">P</button>
+    <button onclick="fn('Q')">Q</button>
+    <button onclick="fn('R')">R</button>
+    <button onclick="fn('S')">S</button>
+    <button onclick="fn('T')">T</button>
+    <button onclick="fn('U')">U</button>
+    <button onclick="fn('V')">V</button>
+    <button onclick="fn('W')">W</button>
+    <button onclick="fn('X')">X</button>
+    <button onclick="fn('Y')">Y</button>
+    <button onclick="fn('Z')">Z</button>
+
+</div>
+
+
+<script>
+        var find={
+            'A':[
+             "Apple",
+             "Ant",
+             "Aeroplane",
+             "animal",
+             "astratheme"
+            ],
+            'B':[
+             "Bannana",
+             "Bukcet",
+             "Benstokes",
+             "Bat",
+             "Balochistan",
+            ],
+            "C":[
+             "Camel",
+             "Cava",
+             "Canva",
+             "C++",
+             "Count",
+            ],
+            'D': [
+        "Dog",
+        "Duck",
+        "Dolphin",
+        "Data",
+        "Design"
+    ],
+    'E': [
+        "Elephant",
+        "Eagle",
+        "Excel",
+        "Email",
+        "Ecosystem"
+    ],
+    'F': [
+        "Frog",
+        "Fish",
+        "Fox",
+        "Football",
+        "Function"
+    ],
+    'G': [
+        "Giraffe",
+        "Goat",
+        "Google",
+        "Graph",
+        "Game",
+    ],
+    'H': [
+        "Horse",
+        "Hippo",
+        "Hawk",
+        "HTML",
+        "Harmony",
+    ],
+    'I': [
+        "Iguana",
+        "Ice Cream",
+        "Internet",
+        "Idea",
+        "Illustration"
+    ],
+    'J': [
+        "Jaguar",
+        "Jellyfish",
+        "Java",
+        "JavaScript",
+        "Journey"
+    ],
+    'K': [
+        "Kangaroo",
+        "Koala",
+        "Kite",
+        "Keyboard",
+        "King"
+    ],
+    'L': [
+        "Lion",
+        "Lizard",
+        "Laptop",
+        "Linux",
+        "Language"
+    ],
+    'M': [
+        "Monkey",
+        "Mango",
+        "Mountain",
+        "Music",
+        "Machine"
+    ],
+    'N': [
+        "Nest",
+        "Ninja",
+        "Node.js",
+        "Network",
+        "Novel"
+    ],
+    'O': [
+        "Owl",
+        "Octopus",
+        "Opera",
+        "Object",
+        "Oracle"
+    ],
+    'P': [
+        "Penguin",
+        "Parrot",
+        "Python",
+        "Piano",
+        "Program"
+    ],
+    'Q': [
+        "Quokka",
+        "Queen",
+        "Query",
+        "Quality",
+        "Quill"
+    ],
+    'R': [
+        "Rabbit",
+        "Raccoon",
+        "Ruby",
+        "Robot",
+        "Research"
+    ],
+    'S': [
+        "Squirrel",
+        "Snake",
+        "SQL",
+        "Science",
+        "System"
+    ],
+    'T': [
+        "Tiger",
+        "Turtle",
+        "Table",
+        "Technology",
+        "Tool"
+    ],
+    'U': [
+        "Umbrella",
+        "Unicorn",
+        "Ubuntu",
+        "Uniform",
+        "Understanding"
+    ],
+    'V': [
+        "Vulture",
+        "Vanilla",
+        "Virtual",
+        "Vision",
+        "Vehicle"
+    ],
+    'W': [
+        "Wolf",
+        "Whale",
+        "Windows",
+        "Website",
+        "Wish"
+    ],
+    'X': [
+        "Xylophone",
+        "X-ray",
+        "XML",
+        "Xenon",
+        "Xenophobia"
+    ],
+    'Y': [
+        "Yak",
+        "Yoga",
+        "YouTube",
+        "Yard",
+        "Year"
+    ],
+    'Z': [
+        "Zebra",
+        "Zoo",
+        "Zoom",
+        "Zone",
+        "Zen"
+    ]
+
+
+        }
+
+        function fn(letter){
+            var rn=Math.floor(Math.random()*5)
+            var res=find[letter][rn]
+        
+            var inp=document.getElementById("inp").value=res; 
+            console.log(res)
+        }
+    </script>
+</body>
+</html>
