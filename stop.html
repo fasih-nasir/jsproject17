@@ -8,161 +8,121 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .container-fluid{
-            /* background-color:  #010204ea; */
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            font-family: play;;
-            color: white;
-        }
-        .container-fluid>div>div{
-            /* display: flex; */
-            /* flex-direction: column; */
-            /* align-items: center; */
-            padding: 0px 10px;
-            /* border: 2px solid green; */
-        }
-        .container-fluid>div{
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: center;
-            /* padding: 0px px !important; */
-            /* height: 30px; */
-            /* width: 400px; */
-            display: flex;
-            flex-direction: row;
-            /* flex-direction: ; */
-            /* justify-content: center; */
-            /* align-items: center; */
-            /* flex-direction: row; */
-            /* border: 2px solid white !important; */
-            border: none;
-            border-radius: 20px;
-            background-color: #151528 !important;
-            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px 
-            !important;
-        }
-        
-        button{
-            /* border: 2px solid green !important; */
-            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px !important;
-            border: none; 
-            color: white;
-            padding: 8px 0px;
-            margin: 5px 0px;
-            border-radius: 40px;
-            width: 100px;
-              background-color:#9799b369;
-        }
         button:hover{
-            background-color:#151528;
-            color:white;
+            background-color: #4D4E5B;
+            border: 2px solid #121427;
+        }
+       
+        select{
+            outline: none !important;
+            background-color: #4D4E5B;
+            opacity: 1;
+            z-index: 2;
             border: 1px solid #4D4E5B;
-        }
-        .fin{
-            /* border: 2px solid white !important; */
-            margin-top: 70px;
-            text-align: center;
-            background-color: #4D4E5B !important;
+            text-transform: capitalize;
+            
             color: white;
-            height: 90px !important;
-        display: flex;
-        flex-direction: row;
-        /* width: 100% !important; */
-        /* justify-content: space-between !important; */
-        align-items: center !important;
+            padding: 15px 20px;
+            font-size: 22px;
+            height: 69px;
+            border: 2px solid #4D4E5B;
+            box-sizing: border-box;
         }
-        select:active{
-            border: none;
+        option:pla
+        option
+        {
+            /* font-size: 12px; */
+            border: 2px solid none;
+            background-color: #121427;
+            font-family: play;
+            padding: 10px 0px;
         }
-        .fin>h2{
-            text-align: center !important;
-            /* border: 2px solid green; */
-            padding: 0px 30px;
-        
+        button{
+            background-color: #4D4E5B;
+            font-family: play;
+            color: white;
+            box-sizing: border-box;
+            padding: 12px 42px;
+            font-size: 20px;
+            background-color: #121427;
+            border: 1px solid #4D4E5B;
+            border-radius: 122px;
+            /* border: none; */
         }
-        h1{
-            /* border: 1px solid gray; */
-            /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px !important; */
-            display: inline-block;
+        .container-fluid{
+            background-color:#121427;
+            display: flex;
+            padding: 16px 22px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            /* background-image: url("home.png"); */
+            height: 120vh;
+            background-position: center;
+            /* margin-top: -10px; */
+        /* margin: 0px;padding: 0px; */
+            /* width: 100%; */
         }
-        </style>
+        .d1{
+            /* border: 2px solid green */
+/* ; */
+height: 100px;
+border-radius: 50px;
+width: 40%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: -65px;
+background-color: #4D4E5B;
+/* opacity: 0.5; */
+}
+select>.op:hover{
+    background-color: #121427 !important;
+    padding: 40px 0px !important;
+ }  
+  
+    </style>
 </head>
 <body>
+
     <div class="container-fluid">
-    <div class="col-5">
-        <div>
-            <h1 id="hour" style="font-size: 140px">0</h1>
-            <span >H</span>
-</div>
-    <div>
-     
-            
-        <h1 id="min" style="font-size: 71px;margin-top: -10px;">0</h1>
-        <span>m</span><BR>
-        <h1 id="sec" style="line-height: 5px; color: rgba(255, 255, 255, 0.521);">00</h1>
-        <span>s</span>
-</div>
-    
-        <div class="q">
-    <button onclick="start()" id="btn1"  class="col-11 mt-3"> <i class="fas fa-play"></i></button>
-    <button onclick="stop()"><i class="fa fa-pause-circle" aria-hidden="true"></i></button>
-    <button onclick="reset()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+    <div class="d1"> 
+   <select name="" id="name">
+    <option disabled selected>Projects</option>
+    <option  value="calculator">calculator</option>
+    <option  value="calculator1">Age-Calculator</option>
+    <option  value="stopwatch">Stop Watch</option>
+    <option  value="alpha">Alphabet Generatot</option>
+</select>
+<button onclick="fn()">Open</button>
 </div>
 </div>
-</div>
+
     <script>
-        
-     var sec=0;
-     var min=0;
-     var hour=0;
-var timer;
-     function up(){
-
-        
-        document.getElementById("sec").innerHTML=sec++
-    //   var c=document.getElementById("smin").innerHTML
-        document.getElementById("min").innerHTML=min
-        document.getElementById("hour").innerHTML=hour
-        if(sec > 60){
-            sec=0;
-            min++;
-        }
-        else if(min >= 60){
-            min=0+1;
-            // smin++;
-hour++;
-
-        }
-        
-     }
-     function start(){
-         timer=setInterval(up ,500)
-     
-         var n=document.getElementById("btn1").disabled = true;
-    }
-
-    function stop(){
-        clearInterval(timer)
-    }
-    function reset(){
+        function fn(){
+        var inp=document.getElementById("name").value;
     
-sec=document.getElementById("sec").innerHTML=0
-     min=document.getElementById("min").innerHTML=0
-   hour=document.getElementById("hour").innerHTML=0
-     console.log(sec)
-     if(sec == 0 && min == 0 && hour == 0 ){
-     var b;
-     }
-
+       
+    
+    if(inp === "calculator"){
+        window.open("cal.html")
+    }    
+    else if(inp === "calculator1")
+    {
+        window.open("age.html")
     }
-    // alert("Refersh A Page After")
-    </script>
+    else if(inp == "stopwatch"){
+        window.open("stop.html")
+    }
+    else if(inp == "alpha"){
+        window.open("findalpha.html")
+    }
+    else{
+        document.write("Invaluid")
+    }
+    }
+        </script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
